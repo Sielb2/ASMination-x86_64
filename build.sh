@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "installing..."
+echo -e "\e[32minstalling packages...\e[0m"
 sudo apt update && sudo apt install nasm binutils -y
-echo "building animation..."
+echo -e "\e[32mbuilding animation...\e[0m"
 nasm -f elf64 asmination.asm -o asmination.o
 ld asmination.o -o asmination
-echo "run animation with ./asmination !"
+echo -e "\e[32m play animation with ./asmination !\e[0m"
